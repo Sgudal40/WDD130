@@ -1,0 +1,47 @@
+body {
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 0.5em;
+    font-size: 18px;
+    text-align: center;
+    background-color: #5CA1D7;
+    margin-top: 0;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+}
+ol {
+    list-style-type: inside;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+}
+ol li {
+    text-align: left;
+    padding-left: 1.5em;
+    position: relative;
+}
+.white {
+    color: rgb(241, 241, 241);
+}
+#head {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+#head {
+    color:white;
+}
+#head:hover {
+    color: black;
+}
+#Quote {
+    max-width: 340px;
+    margin: 0 auto;
+}
+#attribution {
+    max-width: 360px;
+    margin: 0 auto;
+}
