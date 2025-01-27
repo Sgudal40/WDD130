@@ -13,12 +13,15 @@ img {
     max-width: 200px;
 }
 ol {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     list-style-type: inside;
     padding: 0;
     text-align: left;
     display: inline-block;
+    font-weight: 501;
 }
 ol li {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     text-align: left;
     padding-left: 1.5em;
     position: relative;
@@ -27,7 +30,7 @@ ol li {
     color: rgb(241, 241, 241);
 }
 #head {
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 700;
     text-decoration: none;
 }
