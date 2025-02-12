@@ -1,0 +1,121 @@
+body {
+    background-color: #f7e7e7;
+}
+nav {
+    
+    border-radius: 15px;
+    margin: 10px;
+}
+ul {
+    margin: 1px;
+    padding: 0px 2px 0px 2px;
+    overflow: hidden;
+    background-color: #fa719a;
+    display: flex;
+    justify-content: flex-start;
+    gap: 5.5em;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    list-style-type: none;
+    border: #ff6291e1 5px solid;
+}
+ul li:first-child {
+    margin-left: 2em;
+}
+ul li {
+    position: relative;
+    padding: 0px 0.25em  0px 0.25px;
+    padding-left: 0.15em;
+    list-style: none;
+    border: transparent 2px solid;
+    transition: background-color 0.5s, color 0.5s, border-radius 0.6s, padding-left 0.5s, padding-right 0.5s, padding 0.6s, border 0.6s, margin 0.6s, font-size 0.6s, font-weight 0.6s, font-family 0.6s, padding-top 0.6s, padding-bottom 0.6s, gap 0.6s, margin-left 0.6s;
+}
+ul li:hover {
+    background-color: rgb(236, 0, 0);
+    color: white;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    border-radius: 12px;
+
+}
+ul li::before {
+    content: '♥';
+    font-size: 1.5em;
+    margin-right: 0.5em;
+    display: inline-block;
+    list-style: none;
+}
+ul li:hover::before {
+    content: '❤';
+    margin-right: 0.25em;
+}
+main {
+    align-items: center;
+    background-color: #f7e7e7;
+    padding: 20px;
+}
+main img {
+    max-width: 45%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #fa719a;
+    border-radius: 10px;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.151);
+}
+
+section {
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #fa719a;
+    color: white;
+    border-radius: 8px;
+    display: block;
+    margin-top: 20px;
+}
+footer:hover {
+    background-color: #e61313;
+    color: black;
+}
+
+.LT {
+    color: #e61313;
+    text-shadow: #fa719a 2px 2px 4px;
+    background-color: #ffbcbc48;
+    border-radius: 8px;
+}
+.LP {
+    color: darkred;
+    text-shadow: #fa719a 2px 2px 4px;
+    background-color: #ffbcbc27;
+    border-radius: 1px;
+}
+.LT, .LP {
+    padding: 5px 10px;
+    margin: 0;
+    display: inline-block;
+    border-radius: 4px;
+}
+#text {
+    background-color: #ff8daf;
+    border-radius: 4px;
+}
+h1 {
+    color: #e61313;
+    text-shadow: #fa719a 2px 2px 4px;
+    background-color: #ffbcbc75;
+    border-radius: 12px;
+    padding: 8px 15px 10px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 4px;
+    border: #ffbcbc5b 2px solid;
+    text-align: center;
+    width: 40%;
+}
