@@ -1,0 +1,66 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.ice {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal halves */
+    width: 100%;
+    height: 100vh;
+    position: relative; /* Make the container a positioning context */
+}
+
+.title {
+    grid-column: 1 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12rem;
+    font-weight: bolder;
+    letter-spacing: 45px;
+    width: 100%;
+    height: 100px; /* Adjust the height as needed */
+    position: absolute;
+    top: 13%; /* Adjust this value to move the text higher or lower */
+    left: 0%;
+    transform: translateY(-50%); /* Center the text vertically */
+    z-index: 3;
+    text-align: center;
+    text-shadow: 
+        1px 1px 0 #000;
+}
+
+img {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grey {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #B9B8B9;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-weight: bold;
+}
+
+.sub {
+    font-size: 6.25rem;
+    font-weight: bold;
+    letter-spacing: 18px;
+    text-align: center;
+    align-self: flex-end;
+    margin-bottom: 50px;
+    margin-left: -186px;
+    color: darkred;
+}
