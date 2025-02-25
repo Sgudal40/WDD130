@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Darker+Grotesque:wght@900&family=MedievalSharp&family=Modern+Antiqua&family=Pixelify+Sans:wght@400..700&family=UnifrakturMaguntia&display=swap');
 body {
     font-family: 'Uncial Antiqua', cursive;
     background-color: #f4f1de;
@@ -7,6 +7,10 @@ body {
     margin: 0;
     padding: 0;
     background-image: url('https://www.transparenttextures.com/patterns/aged-paper.png');
+}
+.title {
+    font-family: UnifrakturMaguntia, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: #3e2c1c 1px 0px 2px;
 }
 
 header {
