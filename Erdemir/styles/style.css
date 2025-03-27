@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Amarante&family=Darker+Grotesque:wght@900&family=MedievalSharp&family=Modern+Antiqua&family=Pixelify+Sans:wght@400..700&family=UnifrakturMaguntia&display=swap');
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 247, 236);
+}
+main {
+    display: grid;
+    grid-template-columns: 406px 2fr 406px;
+    grid-template-rows: auto auto 1fr auto;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    flex: 1; 
+}
+#mainimg {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    z-index: -1;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+}
+#mainimg img {
+    width: 75%;
+    height: 675px;
+}
+#welcome {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    position:inherit;
+    text-align: center;
+
+}
+#background {
+    grid-column: 2 / 3;
+    grid-row: 2 / 5;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#background img {
+    width: 100%;
+    height: 100%;
+    max-height: 100vh; 
+    object-fit: cover;
+    object-position: center;
+}
+header {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+    text-align: end;
+    justify-content: flex-end;
+    text-align: flex-end;
+    background-color: rgb(32, 105, 32);
+    height: 125px;
+}
+header img {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+    margin: 30px 25px 30px 15px; /* Top, Right, Bottom, Left */
+    border-radius: 25px;
+}
+nav {
+    display: flex; /* Make sure the nav links are displayed in a row */
+    width: 100%;
+    height: 100%; /* Ensure nav takes up full height of the header */
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0 35px 0 35px;
+    font-family: MedievalSharp, sans-serif;
+    display: flex; /* Make the link take full height of the parent */
+    align-items: center; /* Vertically center text */
+    justify-content: center;
+    height: 100%;
+    width: 100%; /* Ensure the link takes full width of the nav */
+    box-sizing: border-box;
+}
+nav a:hover {
+    color: #CFD920;
+    text-shadow: #00000018 2px 1px 4px;
+    display: flex; /* Ensure hover effect works properly */
+    background-color: #000;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px 0 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+ul li {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+ul li:nth-child(1) { 
+    --i: 0; 
+    margin-left: 5px; /* First item has exactly 10px */
+}
+ul li:nth-child(n+2) { 
+    --i: calc(var(--i-prev) + 1); /* Increase index */
+    margin-left: calc(5px - (11px * (var(--i)))); 
+}
+/* Set values for each item manually */
+ul li:nth-child(2) { --i: 1; }
+ul li:nth-child(3) { --i: 2; }
+ul li:nth-child(4) { --i: 3; }
+ul li:nth-child(5) { --i: 4; }
+
+ul li:last-child {
+    margin-right: 19px;
+}
+
+#leftbar {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+#leftbar img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100vh;
+}
+#rightbar {
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+#rightbar img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100vh;
+}
+#leftbar, #rightbar {
+    height: 100%;
+}
+#leftbar img, #rightbar img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+#maindescription {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    text-align: center;
+    font-family: Pixelify Sans, sans-serif;
+    font-size: 20px;
+    max-height: 165px; /* Adjust as needed */
+    overflow-y: scroll; /* Allows scrolling if text overflows */
+    color: #000;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 10px;
+    text-shadow: #ffffff48 2px 1px 15px;
+    border: #ffffff1e 5px medium solid;
+    background-color: #ffffff1e;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.115);
+}
+#maindescription::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+#maindescription {
+    scrollbar-width: thin; /* Makes the scrollbar narrower but still invisible when not needed */
+    scrollbar-color: transparent transparent; /* Hides the scrollbar but still allows scrolling */
+}
+footer {
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    align-content: top;
+    padding: 45px 0px;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 35px;
+    margin: 0;
+    z-index: 1;
+}
