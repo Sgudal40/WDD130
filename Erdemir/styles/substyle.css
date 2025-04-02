@@ -258,6 +258,7 @@ footer {
     text-align: center;
     font-family: Pixelify Sans, sans-serif;
     font-size: 20px;
+    font-weight: normal;
     max-height: 165px; /* Adjust as needed */
     overflow-y: scroll; /* Enable vertical scrolling */
     color: #000;
