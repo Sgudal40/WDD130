@@ -170,7 +170,7 @@ footer {
     color: white;
     text-align: center;
     align-content: top;
-    padding: 22px 0px;
+    padding: 23px 0px;
     width: 100vw;
     height: 25px;
     margin: 0;
@@ -259,7 +259,7 @@ footer {
     font-family: Pixelify Sans, sans-serif;
     font-size: 20px;
     font-weight: normal;
-    max-height: 195px; /* Adjust as needed */
+    max-height: 194px; /* Adjust as needed */
     overflow-y: scroll; /* Enable vertical scrolling */
     color: #000;
     padding: 10px;
