@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/substyle.css">
+    <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
+    <title>Ember Cliffs</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="Index.html"> 
+                <img src="Images/Erdemir-Logo.png" alt="Erdemir Logo">
+            </a>
+        </div>
+        <button class="openbtn" onclick="openNav()">☰ Regions</button>
+        <nav id="navbar"> 
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="site-plan.html">Site Plan</a></li>
+                <li><a href="https://sgudal40.github.io/WDD130/">My Page</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul> 
+        </nav>
+    </header>
+    <main>
+        <div id="welcome">
+            <h2>Welcome to Ember Cliffs</h2>
+                <section id="emberimg">
+                    <img src="Images/Ember Cliffs.png" alt="Image of map">
+                </section>
+            <section id="emberdescription">
+                <p>Ember Cliffs is a land of smoldering peaks and glowing crags, where volcanic heat shapes both the land and the lives of those who call it home. Though the mountains rumble and rivers of lava carve their way through the stone, the region has known relative peace for generations, with eruptions more predictable than feared.<br><br>
+                At its heart rises Candlespire, a towering volcano whose steady glow serves as both a beacon and a warning. The cliffs and valleys surrounding it are rich with rare materials, drawing in those resilient enough to harvest the land’s bounty. Settlements cling to the mountainsides, their people accustomed to the heat and the ever-present scent of ash.<br><br>
+                Life here is shaped by fire and stone, a test of endurance for those who seek its hidden treasures.</p>
+            </section>
+        </div>
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="myria-territory.html">Myria Territory</a><br>
+            <a href="new-varon.html">New Varon</a><br>
+            <a href="ancient-desert.html">The Ancient Desert</a><br>
+            <a href="dark-forest.html">The Dark forest</a><br>
+            <a href="ember-cliffs.html">Ember Cliffs</a><br>
+            <a href="endless-peaks.html">Endless Peaks</a><br>
+            <a href="snowpoint-highlands.html">Snowpoint Highlands</a><br>
+            <a href="death-valley.html">Death Valley</a><br>
+            <a href="golden-desert.html">Golden Desert</a><br>
+            <a href="elarias-embrace.html">Elaria's Embrace</a><br>
+            <a href="nomads-reach.html">Nomad's Reach</a><br>
+            <a href="seawell.html">SeaWell</a><br>
+          </div>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidepanel").style.width = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+          }
+          </script>
+        
+        <div id="leftbar">
+            <img src="Images/LeftBorder.png" alt="Left bar image">
+        </div>
+        <div id="rightbar">
+            <img src="Images/RightBorder.png" alt="Right bar image">
+        </div>
+        <div id="background">
+        <img src="Images/Background.png" alt="Background image">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Erdemir. All rights reserved.</p>
+</body>
+</html>
