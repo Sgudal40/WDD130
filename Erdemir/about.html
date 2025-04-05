@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/style.css">
+    <title>About Me</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="Index.html"> 
+                <img src="Images/Erdemir-Logo.png" alt="Erdemir Logo">
+            </a>
+        </div>
+        <button class="openbtn" onclick="openNav()">☰ Regions</button>
+        <nav id="navbar"> 
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="site-plan.html">Site Plan</a></li>
+                <li><a href="https://sgudal40.github.io/WDD130/">My Page</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul> 
+        </nav>
+    </header>
+    <main id="aboutmain">
+    <section id="abouttext">
+    <h2>About Me</h2>
+    <h5>Welcome to my world of Erdemir!</h5>
+    <p>I created this website as a way to bring to life the vast and intricate continent I’ve been building for my DnD campaigns. Erdemir is a place rich with lore, cultures, and landscapes, and I wanted a space to share it all. It’s not just for me—it’s for anyone who loves fantasy worlds and storytelling. Whether you’re a fellow Dungeon Master, a player, or someone just looking for inspiration, I hope you find something that sparks your imagination.<br><br>
+
+    At its heart, this site is a tool for my own DnD adventures, but I also hope it serves as a resource for worldbuilding, creative writing, and inspiration for your own projects. It’s a place where creativity flows freely, where ideas take shape, and where everyone can explore the magic of fantasy together<br><br>
+
+    Thank you for visiting Erdemir - here’s to many adventures, stories, and worlds waiting to be discovered!</p>
+    </section>
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="myria-territory.html">Myria Territory</a><br>
+        <a href="new-varon.html">New Varon</a><br>
+        <a href="ancient-desert.html">The Ancient Desert</a><br>
+        <a href="dark-forest.html">The Dark forest</a><br>
+        <a href="ember-cliffs.html">Ember Cliffs</a><br>
+        <a href="endless-peaks.html">Endless Peaks</a><br>
+        <a href="snowpoint-highlands.html">Snowpoint Highlands</a><br>
+        <a href="death-valley.html">Death Valley</a><br>
+        <a href="golden-desert.html">Golden Desert</a><br>
+        <a href="elarias-embrace.html">Elaria's Embrace</a><br>
+        <a href="nomads-reach.html">Nomad's Reach</a><br>
+        <a href="seawell.html">SeaWell</a><br>
+      </div>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidepanel").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+      }
+      </script>
+    </main>
+</body>
+<footer>
+    <p>&copy; 2023 Erdemir. All rights reserved.</p>
+</footer>
+</html>

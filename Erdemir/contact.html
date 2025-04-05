@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html id="riverhtml" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/style.css">
+    <title>Contact us subpage for wwr</title>
+</head>
+<body id="contactbody">
+    <header>
+        <div id="logo">
+            <a href="Index.html"> 
+                <img src="Images/Erdemir-Logo.png" alt="Erdemir Logo">
+            </a>
+        </div>
+        <button class="openbtn" onclick="openNav()">☰ Regions</button>
+        <nav id="navbar"> 
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="site-plan.html">Site Plan</a></li>
+                <li><a href="https://sgudal40.github.io/WDD130/">My Page</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul> 
+        </nav>
+    </header>
+        <style> 
+        body {
+            /* Center the form on the page */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+            height: 100vh; 
+          }
+          header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+          }
+          main {
+            margin-top: 100px; /* Push the form below the header */
+            flex-grow: 1; /* Allow the form to take up remaining space */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    }
+          form {
+            display: inline-block;
+            /* Form outline */
+            height: 45%;
+            padding: 1em;
+            border: 1px solid #517685;
+            border-radius: 1em;
+          }
+          p {
+            margin-bottom: 2em;
+          }
+          p + p {
+            margin-top: 0.5em;
+          }
+          
+          label {
+            /* Uniform size & alignment */
+            display: inline-block;
+            min-width: 90px;
+            text-align: right;
+          }
+          
+          input,
+          textarea {
+            /* To make sure that all text fields have the same font settings
+               By default, text areas have a monospace font */
+            font: 1em sans-serif;
+            /* Uniform text field size */
+            width: 300px;
+            box-sizing: border-box;
+            /* Match form field borders */
+            border: 1px solid #919191;
+          }
+          
+          input:focus,
+          textarea:focus {
+            /* Set the outline width and style */
+            outline-style: solid;
+            /* To give a little highlight on active elements */
+            outline-color: #000;
+            text-shadow: 1 1 2px #000;
+          }
+          
+          textarea {
+            /* Align multiline text fields with their labels */
+            vertical-align: top;
+            /* Provide space to type some text */
+            height: 5em;
+          }
+          
+          .button {
+            /* Align buttons with the text fields */
+            padding-left: 90px; /* same size as the label elements */
+          }
+          
+          button {
+            /* This extra margin represent roughly the same space as the space
+               between the labels and their text fields */
+            margin-left: 0.5em;
+          }
+          
+    #feedback {
+    background-color: #abe8f7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+    }
+    .moveDown {
+    margin-top: 3em;
+    }     
+    h2 {
+        margin-top: 0;
+        margin-bottom: 1em;
+        text-align: center;
+        display: flex;
+    }
+    </style>
+    <main id="contactmain">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you! Fill out the form below and we will get back to you as soon as possible.</p>
+        <div id="feedback"></div>
+        <form action="/my-handling-form-page" method="post">
+            <p>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="user_name" />
+
+            </p>
+            <p>
+              <label for="mail">Email:</label>
+              <input type="email" id="mail" name="user_email" />
+            </p>
+            <p>
+              <label for="msg">Message:</label>
+              <textarea id="msg" name="user_message"></textarea>
+            </p>
+            <p class="button">
+                <button type="submit">Send your message</button>
+              </p>
+              
+          </form>   
+          <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="myria-territory.html">Myria Territory</a><br>
+            <a href="new-varon.html">New Varon</a><br>
+            <a href="ancient-desert.html">The Ancient Desert</a><br>
+            <a href="dark-forest.html">The Dark forest</a><br>
+            <a href="ember-cliffs.html">Ember Cliffs</a><br>
+            <a href="endless-peaks.html">Endless Peaks</a><br>
+            <a href="snowpoint-highlands.html">Snowpoint Highlands</a><br>
+            <a href="death-valley.html">Death Valley</a><br>
+            <a href="golden-desert.html">Golden Desert</a><br>
+            <a href="elarias-embrace.html">Elaria's Embrace</a><br>
+            <a href="nomads-reach.html">Nomad's Reach</a><br>
+            <a href="seawell.html">SeaWell</a><br>
+          </div>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidepanel").style.width = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+          }
+          </script>       
+    </main>
+    <footer>
+        <p>&copy; 2023 Erdemir. All rights reserved.</p>
+    </footer>
+    
+<script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+</script>
+                    
+</body>
+</html>
