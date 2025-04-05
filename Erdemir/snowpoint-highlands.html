@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/substyle.css">
+    <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
+    <title>Snowpoint Highlands</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="Index.html"> 
+                <img src="Images/Erdemir-Logo.png" alt="Erdemir Logo">
+            </a>
+        </div>
+        <button class="openbtn" onclick="openNav()">☰ Regions</button>
+        <nav id="navbar"> 
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="site-plan.html">Site Plan</a></li>
+                <li><a href="https://sgudal40.github.io/WDD130/">My Page</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul> 
+        </nav>
+    </header>
+    <main>
+        <div id="welcome">
+            <h2>Welcome to Snowpoint Highlands</h2>
+                <section id="snowimg">
+                    <img src="Images/Snowpoint Highlands.png" alt="Image of map">
+                </section>
+            <section id="snowdescription">
+                <p>Endless Cliffs is a place that defies natural sense. From afar, it resembles a mountain range—but the closer you get, the more it unravels into impossible formations. Sharp ridges cut through the sky at angles no stone should hold, surfaces shimmer with unnatural hues, and what once looked like peaks stretch on into an expanse that seems to fold in on itself.<br><br>
+                Within, logic breaks down. The stone follows no earthly pattern, with geometric shapes jutting from the earth like half-remembered thoughts. Paths loop, horizons warp, and distances lie. It’s not uncommon for travelers to emerge days later—or not at all—unable to recall how long they were gone or what they saw above.<br><br>
+                Some do linger. Creatures of thought, seekers of stillness, and the few who trade sanity for secrets make their homes here, hoping that somewhere within the cliffs lies not understanding, but revelation.</p>
+            </section>
+        </div>
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="myria-territory.html">Myria Territory</a><br>
+            <a href="new-varon.html">New Varon</a><br>
+            <a href="ancient-desert.html">The Ancient Desert</a><br>
+            <a href="dark-forest.html">The Dark forest</a><br>
+            <a href="ember-cliffs.html">Ember Cliffs</a><br>
+            <a href="endless-peaks.html">Endless Peaks</a><br>
+            <a href="snowpoint-highlands.html">Snowpoint Highlands</a><br>
+            <a href="death-valley.html">Death Valley</a><br>
+            <a href="golden-desert.html">Golden Desert</a><br>
+            <a href="elarias-embrace.html">Elaria's Embrace</a><br>
+            <a href="nomads-reach.html">Nomad's Reach</a><br>
+            <a href="seawell.html">SeaWell</a><br>
+          </div>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidepanel").style.width = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+          }
+          </script>
+        
+        <div id="leftbar">
+            <img src="Images/LeftBorder.png" alt="Left bar image">
+        </div>
+        <div id="rightbar">
+            <img src="Images/RightBorder.png" alt="Right bar image">
+        </div>
+        <div id="background">
+        <img src="Images/Background.png" alt="Background image">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Erdemir. All rights reserved.</p>
+</body>
+</html>
